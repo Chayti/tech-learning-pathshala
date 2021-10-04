@@ -7,6 +7,7 @@ import Courses from './components/Courses/Courses';
 import Feedback from './components/Feedback/Feedback';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
           <NotFound></NotFound>
         </Route>
       </Switch>
+
+      <div className="container-fluid" style={{margin: 0, padding: 0}}>
+        <div style={{height:'20px'}}></div>
+        <Footer></Footer> 
+      </div>
 
     </BrowserRouter>
   );
