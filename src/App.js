@@ -7,42 +7,50 @@ import Feedback from './components/Feedback/Feedback';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import { createContext } from 'react';
+
+export const StudentContext = createContext('student');
+const StudentNum = 3;
 
 function App() {
   return (
-    <BrowserRouter>
+    <StudentContext.Provider value={StudentNum}>
       
-      <div className="container-fluid" style={{margin: 0, padding: 0}}>
-        <Header></Header> 
-      </div>
+      <BrowserRouter>
+      
+        <div className="container-fluid" style={{margin: 0, padding: 0}}>
+          <Header></Header> 
+        </div>
 
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route path="/home">
-          <Home></Home>
-        </Route>
-        <Route path="/courses">
-          <Courses></Courses>
-        </Route>
-        <Route path="/feedback">
-          <Feedback></Feedback>
-        </Route>
-        <Route path="/about">
-          <About></About>
-        </Route>
-        <Route path="*">
-          <NotFound></NotFound>
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/courses">
+            <Courses></Courses>
+          </Route>
+          <Route path="/feedback">
+            <Feedback></Feedback>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
 
-      <div className="container-fluid" style={{margin: 0, padding: 0}}>
-        <div style={{height:'20px'}}></div>
-        <Footer></Footer> 
-      </div>
+        <div className="container-fluid" style={{margin: 0, padding: 0}}>
+          <div style={{height:'20px'}}></div>
+          <Footer></Footer> 
+        </div>
 
-    </BrowserRouter>
+      </BrowserRouter>
+
+    </StudentContext.Provider>
   );
 }
 

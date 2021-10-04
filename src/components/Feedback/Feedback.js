@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StudentContext } from "../../App";
 import SingleFeedback from "../SingleFeedback/SingleFeedback";
 import './Feedback.css';
 
@@ -25,10 +26,12 @@ const Feedback = () =>{
         },
     ];
 
+    const StudentNumber = useContext(StudentContext);
+
     return (
         <>
             <div className="text-center py-5" style={{backgroundColor:"#00b9d1dc"}}>
-                 <h1 className="fw-bold text-light">OUR STUDENT'S FEEDBACK</h1>
+                 <h1 className="fw-bold text-light">OUR {StudentNumber} STUDENT'S FEEDBACK</h1>
             </div>
         
             <div style={{height:"40px"}}></div>
