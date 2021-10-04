@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Row } from "react-bootstrap";
+import useCourses from "../../hooks/useCourses";
 import Course from "../Course/Course";
 import './Courses.css';
 
 const Courses = () =>{
     const imgHeight = 220;
-    const [courses, setCourses] = useState([]);
-
-    useEffect(()=>{
-        fetch('./courses.JSON')
-        .then(res=>res.json())
-        .then(data=>setCourses(data));
-    },[])
+    const [courses] = useCourses();
     return (
         <>
             <div className="bg mt-3">
