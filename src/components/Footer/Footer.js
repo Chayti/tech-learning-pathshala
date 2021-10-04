@@ -9,7 +9,7 @@ const Footer =()=>{
                     <div><img src={logo} style={{height:"80px"}} alt="" /></div>
                     <h4 className="pt-3">Contact Us</h4>
                     <div className="d-flex justify-content-center">
-                        <h5 style={{color:"#00b9d1"}}>+8801521999999</h5>
+                        <h5 style={{color:"#00b9d1"}}>+8801521999999,&nbsp;</h5>
                         <h5 style={{color:"#00b9d1"}}>+8801721888888</h5>
                     </div>
                     <small style={{color:"white"}}>9AM - 5PM (SAT, off)</small>

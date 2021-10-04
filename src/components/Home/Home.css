@@ -1,0 +1,26 @@
+.banner-bg{
+    background-image: url('../../images/top-banner2.png');
+    width: 100%;
+    height:250px;
+}
+
+.banner{
+    background-color: rgba(240, 255, 240, 0.788);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h1{
+    padding-top: 20px;
+    font-weight: bold;
+    color: #3870b3;
+}
+h3{
+    font-weight: bold;
+    background-color: #3870b3;
+    color: whitesmoke;
+    line-height: 40px;
+}
+h5{
+    padding-bottom: 20px;
+}

@@ -15,7 +15,6 @@ function App() {
       
       <div className="container-fluid" style={{margin: 0, padding: 0}}>
         <Header></Header> 
-        <div style={{height:'20px'}}></div>
       </div>
 
       <Switch>
