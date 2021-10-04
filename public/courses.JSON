@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "title": "Web Application Development With React",
+      "img": "https://miro.medium.com/max/1200/1*yjH3SiDaVWtpBX0g_2q68g.png",
+      "price": 80
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Asp.net Web Development",
+      "img": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/05/top-5-benefits-of-using-aspnet-core.jpg",
+      "price": 70
+    },
+    {
+      "id": 3,
+      "title": "Beginner to Advance of Graphic Design",
+      "img": "https://www.bdhti.com/images/gd-201.png",
+      "price": 65
+    },
+    {
+      "id": 4,
+      "title": "Data Structure and Algorithm Fundamentals",
+      "img": "https://miro.medium.com/max/2560/1*sMryEXZVPKFjGNcfSzE8Mw.jpeg",
+      "price": 75
+    },
+    {
+      "id": 5,
+      "title": "UI and UX Design for APP and Website",
+      "img": "https://meidilight.com/wp-content/uploads/2021/05/5.jpg",
+      "price": 95
+    },
+    {
+      "id": 6,
+      "title": "Python - Beginner to Advance Course",
+      "img": "https://miro.medium.com/max/715/1*jGhj9VBNYonNTstYr4diFg.jpeg",
+      "price": 55
+    },
+    {
+      "id": 7,
+      "title": "Complete Guide To Flutter APP Development",
+      "img": "https://uploads-ssl.webflow.com/5f841209f4e71b2d70034471/6078b650748b8558d46ffb7f_Flutter%20app%20development.png",
+      "price": 67
+    },
+    {
+      "id": 8,
+      "title": "Learning Competitive Programming And Practise",
+      "img": "https://www.codingninjas.com/blog/wp-content/uploads/2020/11/Blog-34.png",
+      "price": 82
+    }
+  ]
