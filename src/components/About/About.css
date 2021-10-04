@@ -1,0 +1,22 @@
+.top-banner-background{
+    background-image: url('../../images/bg-2.jpg');
+    width: 100%;
+}
+
+.bottom-section{
+    text-align: justify;
+    margin-right: 20%;
+    margin-left: 20%;
+    
+}
+h4{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:650px){
+    .bottom-section{
+        margin-right: 5%;
+        margin-left: 5%;
+        
+    }
+}
