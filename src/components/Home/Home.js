@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Row } from "react-bootstrap";
+import Course from "../Course/Course";
 import './Home.css';
 
 const Home = () =>{
+
+    const [courses, setCourses] = useState([]);
+    const imgHeight = 300;
+
+    useEffect(()=>{
+        fetch('./courses.JSON')
+        .then(res=>res.json())
+        .then(data=>setCourses(data));
+    },[])
+
     return (
         <>
              {/* banner section */}
@@ -14,8 +26,12 @@ const Home = () =>{
             </div>
             
             {/* courses section */}
-            <div>
-                
+            <div className="container">
+            <Row xs={1} md={2} className="g-5 p-5">
+            {
+                courses.slice(0,4).map(course => <Course key={course.id} course={course} imgHeight={imgHeight}></Course>)
+            }
+            </Row>
             </div>
         </>
     );
