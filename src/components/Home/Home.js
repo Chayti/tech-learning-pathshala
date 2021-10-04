@@ -5,8 +5,8 @@ import './Home.css';
 
 const Home = () =>{
 
-    const [courses, setCourses] = useState([]);
     const imgHeight = 300;
+    const [courses, setCourses] = useState([]);
 
     useEffect(()=>{
         fetch('./courses.JSON')
